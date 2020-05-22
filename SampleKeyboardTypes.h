@@ -29,6 +29,7 @@ enum MODIFIER_KEY {
     KEY_CTRL = 1,
     KEY_SHIFT = 2,
     KEY_ALT = 4,
+    KEY_WIN = 8,
 };
 
 
@@ -107,7 +108,7 @@ const KEYMAP keymap[KEYMAP_SIZE] = {
     {0, 0},             /* CAN */
     {0, 0},             /* EM  */
     {0, 0},             /* SUB */
-    {0, 0},             /* ESC */
+    {0x29, 0},          /* ESC */
     {0, 0},             /* FS  */
     {0, 0},             /* GS  */
     {0, 0},             /* RS  */
@@ -268,7 +269,7 @@ const KEYMAP keymap[KEYMAP_SIZE] = {
     {0, 0},             /* CAN */
     {0, 0},             /* EM  */
     {0, 0},             /* SUB */
-    {0, 0},             /* ESC */
+    {0x29, 0},          /* ESC */
     {0, 0},             /* FS  */
     {0, 0},             /* GS  */
     {0, 0},             /* RS  */

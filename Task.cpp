@@ -85,9 +85,10 @@ void Task::stop() {
 	if (m_handle == nullptr) {
 		return;
 	}
-	xTaskHandle temp = m_handle;
-	m_handle = nullptr;
-	::vTaskDelete(temp);
+
+	 xTaskHandle temp = m_handle;
+	 m_handle = nullptr;
+	 ::vTaskDelete(temp);
 } // stop
 
 /**
